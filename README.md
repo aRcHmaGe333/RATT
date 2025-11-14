@@ -2,10 +2,10 @@
 
 ```
 R.A.T.T.
-  |O/
-  /|
-   |
-  / \
+     |
+ \̸̢̙̦̱̠̣͈͈̫̟̿̾̀̊́͜  O|    REVIEW ALL THE THINGS! 
+   /||
+    ||
 ```
 
 **Prior Art Disclosure — November 14, 2025, Stockholm**
