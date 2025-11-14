@@ -1,0 +1,7 @@
+# Ignore everything by default
+*
+
+# Keep only the public RATT disclosure files
+!.gitignore
+!README.md
+!RATT_SYSTEM_SPEC.md
