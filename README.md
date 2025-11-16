@@ -14,7 +14,10 @@ R.A.T.T.
 
 ## What It Is
 
-RATT continuously pulls in items worth reviewing. Multiple large language models review each item independently, from different angles. The system generates a synthesis comparing their reviews: where they align, where they split, what evidence grounds each perspective.
+RATT is a system that continuously pulls in items worth reviewing. 
+Multiple large language models then review each item independently, from different angles (points of view).
+The system generates a synthesis comparing their reviews: where they align, where they split, what evidence grounds each perspective.
+They review each other's review and discuss about improvements for a few rounds, then produce updated versions.
 
 All reviews stay public, timestamped, and versioned. When new information arrives, reviews update. Historical versions remain archived.
 
@@ -22,9 +25,10 @@ All reviews stay public, timestamped, and versioned. When new information arrive
 
 ## Why It Works
 
-Standard review systems hide their reasoning. One authority makes a call. You see the verdict but not how they reached it, what they dismissed, or what they overlooked.
+Standard review systems hide their reasoning. One authority makes a call and you see the verdict but not how it was reached, what was dismissed, or what was overlooked.
 
-RATT puts multiple frameworks against the same thing at the same time. It shows where thinking holds. It shows where it fractures. Evidence is attached to every claim. Reviewer reliability becomes measurable through track record.
+RATT puts multiple frameworks to the same task at the same time. It shows where thinking holds, where it fractures or excels. 
+Evidence is attached to every claim. Reviewer reliability becomes measurable through track record.
 
 ---
 
@@ -73,11 +77,11 @@ R.A.T.T.
 
 ---
 
-Overview
+**Overview**
 
-RATT continuously pulls in items worth reviewing and runs multiple independent reviewer agents on each item. Each agent follows a distinct analytical stance and produces a standalone assessment. A synthesis stage maps agreement and disagreement, attaches supporting evidence, and archives the results. All public-facing outputs pass an automatic Unit Fitness Gate (UFG) that repairs clarity, removes unsupported claims, and preserves the author's intent.
+RATT continuously pulls in items for reviewing and runs multiple independent reviewer agents on each item. Each agent follows a distinct analytical stance and produces a standalone assessment. A synthesis stage maps agreement and disagreement, attaches supporting evidence, and archives the results. All public-facing outputs pass an automatic Unit Fitness Gate (UFG) that repairs clarity, removes unsupported claims, and preserves the author's intent.
 
-Core Principles
+**Core Principles**
 
 - Public, timestamped, and versioned reviews — historical versions remain accessible.
 - Multiplicity: independent perspectives, not a single authority.
@@ -91,19 +95,11 @@ Anything that can be assessed: code, research, proposals, designs, writing, art,
 
 How It Works (brief)
 
-1. RATT pulls in items for assessment.
+1. RATT acquires items for assessment.
 2. Multiple reviewer personas independently assess the item (skeptic, advocate, historian, ethicist, pragmatist, rigorist, aesthete, etc.).
 3. Research agents verify flagged claims and gather evidence.
 4. A moderator agent synthesizes consensus, productive disagreement, and evidence gaps; reviewers see one another's work and generate structured dialogue where needed.
 5. All outputs are archived, searchable, and updateable when new information arrives.
-
-Truncation Immunity
-
-No assumption that non-truncated input constitutes the whole story; the system performs recursive passes to compensate for limits and emulate extended context awareness. RATT watches what it truncates and re-runs analysis as necessary.
-
-Audience-Adaptive Output
-
-Published outputs may be rendered in parallel registers (formal / public / blended) according to audience profile. This is automatic and does not require interactive prompts for each item.
 
 Economic Model (summary)
 
